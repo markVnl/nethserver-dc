@@ -56,7 +56,7 @@ mv %{SOURCE1} root/usr/lib/nethserver-dc
 %systemd_preun nsdc.service
 
 %postun
-%systemd_postun
+%systemd_postun nsdc.service
 
 
 %files -f %{name}-%{version}-filelist
